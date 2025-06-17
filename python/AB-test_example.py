@@ -4,8 +4,8 @@ import numpy as np
 import scipy
 from scipy import stats
 
-df_control = pd.read_csv("C:\\Users\\79524\\PycharmProjects\\data_creator\\data_control.csv")
-df_test = pd.read_csv("C:\\Users\\79524\\PycharmProjects\\data_creator\\data_test.csv")
+df_control = pd.read_csv("C:\\data_control.csv")
+df_test = pd.read_csv("C:\\data_test.csv")
 norm_test_control = stats.shapiro(df_control['order_amount'].sample(1000, random_state=18))
 norm_test_test = stats.shapiro(df_test['order_amount'].sample(1000, random_state=18))
 
