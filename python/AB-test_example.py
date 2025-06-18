@@ -15,7 +15,7 @@ norm_test_test = stats.shapiro(df_test['order_amount'].sample(1000, random_state
 
 MW_test = stats.mannwhitneyu(df_control['order_amount'], df_test['order_amount'])
 
-# MannwhitneyuResult(statistic=np.float64(12278694.0), pvalue=np.float64(0.12523327663512862))
+# MannwhitneyuResult(statistic=np.float64(11985242.0), pvalue=np.float64(0.00036224157118788395))
 # p-value < 0.05, это означает, что нулевая гипотеза о равенстве выборок не верна и имеются значимые статистические отклонения
 # проверим значения медиан и среднего для контрольной и тестовой группы
 
